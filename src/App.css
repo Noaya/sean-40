@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  background-color: #88898A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes grow {
+  from {
+    font-size: 10vh;
+    opacity: 0;
+  }
+  to {
+    font-size: 30vh;
+    opacity: 1;
+  }
+}
+
+.Text {
+  animation: grow 2.5s;
+  font-family: serif;
+  color: white;
+  text-shadow: 1px 1px 2px #D20909;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  opacity: 0;
+}
+
+#Text1 {
+  animation-delay: 2.5s;
+}
+
+#Text2 {
+  animation-delay: 5s;
+}
+
+#Text3 {
+  animation-delay: 7.5s;
+}
+
+#Text4 {
+  animation-delay: 10s;
+}
+
+.CakeContainer {
+  height: 100vh;
+  width: fit-content;
+  position: relative;
+}
+
+.CandleLink {
+  position: absolute;
+}
+
+.Candle {
+  height: 15vh;
+}
+
+.Cake {
+  height: 100%
+}
